@@ -10,7 +10,7 @@ ano_nascimento = 0
 while True:
   try:
     ano_nascimento = int(input("Digite o seu ano de nascimento: "))
-    if ano_nascimento > ano_atual:
+    if ano_nascimento >= ano_atual:
       raise ValueError('O ano de nascimento deve ser maior que o ano atual.')
     break
   except ValueError:
